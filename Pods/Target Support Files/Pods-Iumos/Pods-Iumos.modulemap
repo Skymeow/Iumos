@@ -1,0 +1,6 @@
+framework module Pods_Iumos {
+  umbrella header "Pods-Iumos-umbrella.h"
+
+  export *
+  module * { export * }
+}

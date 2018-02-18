@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43286D25E0547F304039C8E1 /* Pods_Iumos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79427A684A585D6280DBEFC /* Pods_Iumos.framework */; };
+		F9CC45B9203A2B3E003CCD65 /* RaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CC45A6203A2B3A003CCD65 /* RaceViewController.swift */; };
+		F9CC45BA203A2B3E003CCD65 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CC45A7203A2B3A003CCD65 /* HistoryViewController.swift */; };
+		F9CC45BE203A2B3E003CCD65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CC45AE203A2B3B003CCD65 /* AppDelegate.swift */; };
+		F9CC45BF203A2B3E003CCD65 /* ResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CC45AF203A2B3B003CCD65 /* ResultsTableViewCell.swift */; };
+		F9CC45C0203A2B3E003CCD65 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CC45B0203A2B3C003CCD65 /* HomeTableViewCell.swift */; };
+		F9CC45C1203A2B3E003CCD65 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CC45B1203A2B3C003CCD65 /* NameViewController.swift */; };
+		F9CC45C2203A2B3E003CCD65 /* NewExamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CC45B2203A2B3C003CCD65 /* NewExamViewController.swift */; };
+		F9CC45C3203A2B3E003CCD65 /* AgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CC45B3203A2B3D003CCD65 /* AgeViewController.swift */; };
+		F9CC45C4203A2B3E003CCD65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9CC45B4203A2B3D003CCD65 /* Assets.xcassets */; };
+		F9CC45C5203A2B3E003CCD65 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CC45B5203A2B3D003CCD65 /* Data.swift */; };
+		F9CC45C6203A2B3E003CCD65 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CC45B6203A2B3D003CCD65 /* WelcomeViewController.swift */; };
+		F9CC45C7203A2B3E003CCD65 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CC45B7203A2B3E003CCD65 /* ResultsViewController.swift */; };
+		F9CC45C8203A2B3E003CCD65 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CC45B8203A2B3E003CCD65 /* HomeViewController.swift */; };
+		F9CC45DD203A2BC4003CCD65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9CC45DB203A2B8B003CCD65 /* Main.storyboard */; };
+		F9CC45DF203A2BFF003CCD65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9CC45D9203A2B8B003CCD65 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A79427A684A585D6280DBEFC /* Pods_Iumos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Iumos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A826EAC7245A51FC28F3C903 /* Pods-Iumos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Iumos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Iumos/Pods-Iumos.debug.xcconfig"; sourceTree = "<group>"; };
+		D101C13E6FB9BE3ECF904A93 /* Pods-Iumos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Iumos.release.xcconfig"; path = "Pods/Target Support Files/Pods-Iumos/Pods-Iumos.release.xcconfig"; sourceTree = "<group>"; };
+		F9CC4590203A2AEA003CCD65 /* Iumos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Iumos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9CC45A5203A2B39003CCD65 /* Iumos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Iumos-Bridging-Header.h"; sourceTree = "<group>"; };
+		F9CC45A6203A2B3A003CCD65 /* RaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RaceViewController.swift; sourceTree = "<group>"; };
+		F9CC45A7203A2B3A003CCD65 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		F9CC45A8203A2B3A003CCD65 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../../../../Downloads/lumos ios/lumos ios/Info.plist"; sourceTree = "<group>"; };
+		F9CC45AE203A2B3B003CCD65 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F9CC45AF203A2B3B003CCD65 /* ResultsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsTableViewCell.swift; sourceTree = "<group>"; };
+		F9CC45B0203A2B3C003CCD65 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		F9CC45B1203A2B3C003CCD65 /* NameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
+		F9CC45B2203A2B3C003CCD65 /* NewExamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewExamViewController.swift; sourceTree = "<group>"; };
+		F9CC45B3203A2B3D003CCD65 /* AgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgeViewController.swift; sourceTree = "<group>"; };
+		F9CC45B4203A2B3D003CCD65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../Downloads/lumos ios/lumos ios/Assets.xcassets"; sourceTree = "<group>"; };
+		F9CC45B5203A2B3D003CCD65 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		F9CC45B6203A2B3D003CCD65 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		F9CC45B7203A2B3E003CCD65 /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		F9CC45B8203A2B3E003CCD65 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F9CC45DA203A2B8B003CCD65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F9CC45DC203A2B8B003CCD65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9CC458D203A2AEA003CCD65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43286D25E0547F304039C8E1 /* Pods_Iumos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		758D5F72F8356A419AF9B80D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A79427A684A585D6280DBEFC /* Pods_Iumos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9CC4587203A2AEA003CCD65 = {
+			isa = PBXGroup;
+			children = (
+				F9CC4592203A2AEA003CCD65 /* Iumos */,
+				F9CC4591203A2AEA003CCD65 /* Products */,
+				FDB4A8B78BEA2DD4FC0D798E /* Pods */,
+				758D5F72F8356A419AF9B80D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F9CC4591203A2AEA003CCD65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9CC4590203A2AEA003CCD65 /* Iumos.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9CC4592203A2AEA003CCD65 /* Iumos */ = {
+			isa = PBXGroup;
+			children = (
+				F9CC45A8203A2B3A003CCD65 /* Info.plist */,
+				F9CC45AE203A2B3B003CCD65 /* AppDelegate.swift */,
+				F9CC45B4203A2B3D003CCD65 /* Assets.xcassets */,
+				F9CC45D8203A2B8B003CCD65 /* Storyboards */,
+				F9CC45E5203A2C82003CCD65 /* Model */,
+				F9CC45E4203A2C6E003CCD65 /* ViewController */,
+				F9CC45E3203A2C61003CCD65 /* Cell */,
+				F9CC45A5203A2B39003CCD65 /* Iumos-Bridging-Header.h */,
+			);
+			path = Iumos;
+			sourceTree = "<group>";
+		};
+		F9CC45D8203A2B8B003CCD65 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F9CC45D9203A2B8B003CCD65 /* LaunchScreen.storyboard */,
+				F9CC45DB203A2B8B003CCD65 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			path = "../../../../Downloads/lumos ios/lumos ios/Storyboards";
+			sourceTree = "<group>";
+		};
+		F9CC45E3203A2C61003CCD65 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F9CC45AF203A2B3B003CCD65 /* ResultsTableViewCell.swift */,
+				F9CC45B0203A2B3C003CCD65 /* HomeTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F9CC45E4203A2C6E003CCD65 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F9CC45B3203A2B3D003CCD65 /* AgeViewController.swift */,
+				F9CC45A7203A2B3A003CCD65 /* HistoryViewController.swift */,
+				F9CC45B8203A2B3E003CCD65 /* HomeViewController.swift */,
+				F9CC45B7203A2B3E003CCD65 /* ResultsViewController.swift */,
+				F9CC45B6203A2B3D003CCD65 /* WelcomeViewController.swift */,
+				F9CC45B1203A2B3C003CCD65 /* NameViewController.swift */,
+				F9CC45B2203A2B3C003CCD65 /* NewExamViewController.swift */,
+				F9CC45A6203A2B3A003CCD65 /* RaceViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F9CC45E5203A2C82003CCD65 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F9CC45B5203A2B3D003CCD65 /* Data.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FDB4A8B78BEA2DD4FC0D798E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A826EAC7245A51FC28F3C903 /* Pods-Iumos.debug.xcconfig */,
+				D101C13E6FB9BE3ECF904A93 /* Pods-Iumos.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9CC458F203A2AEA003CCD65 /* Iumos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9CC45A2203A2AEA003CCD65 /* Build configuration list for PBXNativeTarget "Iumos" */;
+			buildPhases = (
+				395F3C874F86695074E4AC6E /* [CP] Check Pods Manifest.lock */,
+				F9CC458C203A2AEA003CCD65 /* Sources */,
+				F9CC458D203A2AEA003CCD65 /* Frameworks */,
+				F9CC458E203A2AEA003CCD65 /* Resources */,
+				F6C768CAB2856334DD186BE0 /* [CP] Embed Pods Frameworks */,
+				8E3558CA721CA3CCCEAEA151 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Iumos;
+			productName = Iumos;
+			productReference = F9CC4590203A2AEA003CCD65 /* Iumos.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9CC4588203A2AEA003CCD65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Sky Xu";
+				TargetAttributes = {
+					F9CC458F203A2AEA003CCD65 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F9CC458B203A2AEA003CCD65 /* Build configuration list for PBXProject "Iumos" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9CC4587203A2AEA003CCD65;
+			productRefGroup = F9CC4591203A2AEA003CCD65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9CC458F203A2AEA003CCD65 /* Iumos */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9CC458E203A2AEA003CCD65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9CC45DD203A2BC4003CCD65 /* Main.storyboard in Resources */,
+				F9CC45DF203A2BFF003CCD65 /* LaunchScreen.storyboard in Resources */,
+				F9CC45C4203A2B3E003CCD65 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		395F3C874F86695074E4AC6E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Iumos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E3558CA721CA3CCCEAEA151 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Iumos/Pods-Iumos-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6C768CAB2856334DD186BE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Iumos/Pods-Iumos-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Fusuma/Fusuma.framework",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fusuma.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Iumos/Pods-Iumos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9CC458C203A2AEA003CCD65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9CC45C7203A2B3E003CCD65 /* ResultsViewController.swift in Sources */,
+				F9CC45BE203A2B3E003CCD65 /* AppDelegate.swift in Sources */,
+				F9CC45C6203A2B3E003CCD65 /* WelcomeViewController.swift in Sources */,
+				F9CC45C0203A2B3E003CCD65 /* HomeTableViewCell.swift in Sources */,
+				F9CC45B9203A2B3E003CCD65 /* RaceViewController.swift in Sources */,
+				F9CC45BF203A2B3E003CCD65 /* ResultsTableViewCell.swift in Sources */,
+				F9CC45C2203A2B3E003CCD65 /* NewExamViewController.swift in Sources */,
+				F9CC45BA203A2B3E003CCD65 /* HistoryViewController.swift in Sources */,
+				F9CC45C3203A2B3E003CCD65 /* AgeViewController.swift in Sources */,
+				F9CC45C5203A2B3E003CCD65 /* Data.swift in Sources */,
+				F9CC45C1203A2B3E003CCD65 /* NameViewController.swift in Sources */,
+				F9CC45C8203A2B3E003CCD65 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F9CC45D9203A2B8B003CCD65 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9CC45DA203A2B8B003CCD65 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F9CC45DB203A2B8B003CCD65 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9CC45DC203A2B8B003CCD65 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F9CC45A0203A2AEA003CCD65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F9CC45A1203A2AEA003CCD65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9CC45A3203A2AEA003CCD65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A826EAC7245A51FC28F3C903 /* Pods-Iumos.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A3KV3V94JT;
+				INFOPLIST_FILE = "$(SRCROOT)/../../../Downloads/lumos ios/lumos ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sky.Iumos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Iumos/Iumos-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F9CC45A4203A2AEA003CCD65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D101C13E6FB9BE3ECF904A93 /* Pods-Iumos.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A3KV3V94JT;
+				INFOPLIST_FILE = "$(SRCROOT)/../../../Downloads/lumos ios/lumos ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sky.Iumos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Iumos/Iumos-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9CC458B203A2AEA003CCD65 /* Build configuration list for PBXProject "Iumos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9CC45A0203A2AEA003CCD65 /* Debug */,
+				F9CC45A1203A2AEA003CCD65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9CC45A2203A2AEA003CCD65 /* Build configuration list for PBXNativeTarget "Iumos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9CC45A3203A2AEA003CCD65 /* Debug */,
+				F9CC45A4203A2AEA003CCD65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F9CC4588203A2AEA003CCD65 /* Project object */;
+}
