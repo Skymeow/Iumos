@@ -47,7 +47,7 @@ class NewExamViewController: UIViewController, FusumaDelegate {
         // Show Fusuma
         let fusuma = FusumaViewController()
         fusumaCropImage = false
-        fusuma.hasVideo = false
+//        fusuma.hasVideo = false
         fusuma.delegate = self
         self.present(fusuma, animated: true, completion: nil)
 
@@ -55,11 +55,12 @@ class NewExamViewController: UIViewController, FusumaDelegate {
         whichEye = "left"
     }
     
+    //    MARK: fix me, find a way to false hasVideo
     @IBAction func rightEyeButtonPressed(_ sender: AnyObject) {
         // Show Fusuma
         let fusuma = FusumaViewController()
         fusumaCropImage = false
-        fusuma.hasVideo = false
+//        fusuma.hasVideo = false
         fusuma.delegate = self
         self.present(fusuma, animated: true, completion: nil)
 

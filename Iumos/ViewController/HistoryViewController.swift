@@ -33,7 +33,8 @@ class HistoryViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         nextButton.title = "DONE".uppercased()
         
         if let font = UIFont(name: "AvenirNext-DemiBold", size: 14) {
-            nextButton.setTitleTextAttributes([NSAttributedStringKey.fontNSAttributedStringKey.font:font], for: .normal)
+            nextButton.setTitleTextAttributes([NSAttributedStringKey.font: font], for: .normal)
+            
         }
         
         nextButton.tintColor = UIColor(red: 1.00, green: 0.00, blue: 0.29, alpha: 1)
