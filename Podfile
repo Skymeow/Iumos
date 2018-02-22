@@ -6,7 +6,6 @@ target 'Iumos' do
   use_frameworks!
   # Pods for Iumos
   pod 'SkyFloatingLabelTextField', '~> 3.0'
-  pod 'Fusuma'
   pod 'Alamofire'
 
 end

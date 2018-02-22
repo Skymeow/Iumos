@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		43286D25E0547F304039C8E1 /* Pods_Iumos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79427A684A585D6280DBEFC /* Pods_Iumos.framework */; };
+		F93478FD203F2FD900E4B0A9 /* FrameExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93478FC203F2FD800E4B0A9 /* FrameExtractor.swift */; };
 		F9CC45B9203A2B3E003CCD65 /* RaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CC45A6203A2B3A003CCD65 /* RaceViewController.swift */; };
 		F9CC45BA203A2B3E003CCD65 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CC45A7203A2B3A003CCD65 /* HistoryViewController.swift */; };
 		F9CC45BE203A2B3E003CCD65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CC45AE203A2B3B003CCD65 /* AppDelegate.swift */; };
@@ -29,6 +30,7 @@
 		A79427A684A585D6280DBEFC /* Pods_Iumos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Iumos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A826EAC7245A51FC28F3C903 /* Pods-Iumos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Iumos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Iumos/Pods-Iumos.debug.xcconfig"; sourceTree = "<group>"; };
 		D101C13E6FB9BE3ECF904A93 /* Pods-Iumos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Iumos.release.xcconfig"; path = "Pods/Target Support Files/Pods-Iumos/Pods-Iumos.release.xcconfig"; sourceTree = "<group>"; };
+		F93478FC203F2FD800E4B0A9 /* FrameExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameExtractor.swift; sourceTree = "<group>"; };
 		F9CC4590203A2AEA003CCD65 /* Iumos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Iumos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9CC45A5203A2B39003CCD65 /* Iumos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Iumos-Bridging-Header.h"; sourceTree = "<group>"; };
 		F9CC45A6203A2B3A003CCD65 /* RaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RaceViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F93478FE203F2FDD00E4B0A9 /* HELPER */ = {
+			isa = PBXGroup;
+			children = (
+				F93478FC203F2FD800E4B0A9 /* FrameExtractor.swift */,
+			);
+			path = HELPER;
+			sourceTree = "<group>";
+		};
 		F9CC4587203A2AEA003CCD65 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +103,7 @@
 				F9CC45A8203A2B3A003CCD65 /* Info.plist */,
 				F9CC45AE203A2B3B003CCD65 /* AppDelegate.swift */,
 				F9CC45B4203A2B3D003CCD65 /* Assets.xcassets */,
+				F93478FE203F2FDD00E4B0A9 /* HELPER */,
 				F9CC45D8203A2B8B003CCD65 /* Storyboards */,
 				F9CC45E5203A2C82003CCD65 /* Model */,
 				F9CC45E4203A2C6E003CCD65 /* ViewController */,
@@ -294,6 +305,7 @@
 				F9CC45B9203A2B3E003CCD65 /* RaceViewController.swift in Sources */,
 				F9CC45BF203A2B3E003CCD65 /* ResultsTableViewCell.swift in Sources */,
 				F9CC45C2203A2B3E003CCD65 /* NewExamViewController.swift in Sources */,
+				F93478FD203F2FD900E4B0A9 /* FrameExtractor.swift in Sources */,
 				F9CC45BA203A2B3E003CCD65 /* HistoryViewController.swift in Sources */,
 				F9CC45C3203A2B3E003CCD65 /* AgeViewController.swift in Sources */,
 				F9CC45C5203A2B3E003CCD65 /* Data.swift in Sources */,
