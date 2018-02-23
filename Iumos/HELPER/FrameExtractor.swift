@@ -26,6 +26,7 @@ class FrameExtractor: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate {
 //    create instance of the class
     private let captureSession = AVCaptureSession()
     
+//    we create a context eveytime we convert a buffer into image
     private let context = CIContext()
     
     weak var delegate: FrameExtractorDelegate?

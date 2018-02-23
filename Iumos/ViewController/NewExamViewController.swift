@@ -10,20 +10,15 @@ import UIKit
 
 class NewExamViewController: UIViewController {
     
-    var frameExtractor: FrameExtractor!
-
+    @IBOutlet weak var leftEyeImg: UIImageView!
+    @IBOutlet weak var rightEyeImg: UIImageView!
     @IBOutlet weak var headingLabel: UILabel!
     
     var whichEye: String = ""
-    var leftImage : UIImage!
-    var rightImage : UIImage!
     var eyeImages = [UIImage]()
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.frameExtractor = FrameExtractor()
         
         self.navigationController?.navigationBar.topItem?.title = " "
         navigationController?.navigationBar.tintColor = .white
@@ -38,8 +33,13 @@ class NewExamViewController: UIViewController {
         headingLabel.textColor = UIColor(red: 0.64, green: 0.64, blue: 0.64, alpha: 1)
     }
     
-    @IBAction func leftEyeButtonPressed(_ sender: AnyObject) {
+    func captured(image: UIImage) {
         
+        leftEyeImg.image = image
+    }
+    
+    
+    @IBAction func leftEyeButtonPressed(_ sender: AnyObject) {
         
         whichEye = "left"
     }
