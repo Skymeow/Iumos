@@ -8,12 +8,14 @@
 
 import UIKit
 
-class NewExamViewController: UIViewController {
+class NewExamViewController: UIViewController, FrameExtractorDelegate {
     
     @IBOutlet weak var leftEyeImg: UIImageView!
     @IBOutlet weak var rightEyeImg: UIImageView!
     @IBOutlet weak var headingLabel: UILabel!
     
+    var frameExtractor: FrameExtractor!
+    var imgFrames = [UIImage]()
     var whichEye: String = ""
     var eyeImages = [UIImage]()
     
@@ -38,9 +40,14 @@ class NewExamViewController: UIViewController {
         leftEyeImg.image = image
     }
     
+    @IBAction func stopTapped(_ sender: UIButton) {
+        frameExtractor.stopSession()
+        imgFrames = frameExtractor.imgFrames
+    }
     
     @IBAction func leftEyeButtonPressed(_ sender: AnyObject) {
-        
+         self.frameExtractor = FrameExtractor()
+        frameExtractor.delegate = self
         whichEye = "left"
     }
     

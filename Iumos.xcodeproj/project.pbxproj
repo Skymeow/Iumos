@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		43286D25E0547F304039C8E1 /* Pods_Iumos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79427A684A585D6280DBEFC /* Pods_Iumos.framework */; };
 		F93478FD203F2FD900E4B0A9 /* FrameExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93478FC203F2FD800E4B0A9 /* FrameExtractor.swift */; };
+		F97EE2332040A59A0090E088 /* ImageFramesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97EE2322040A59A0090E088 /* ImageFramesViewController.swift */; };
 		F9CC45B9203A2B3E003CCD65 /* RaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CC45A6203A2B3A003CCD65 /* RaceViewController.swift */; };
 		F9CC45BA203A2B3E003CCD65 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CC45A7203A2B3A003CCD65 /* HistoryViewController.swift */; };
 		F9CC45BE203A2B3E003CCD65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CC45AE203A2B3B003CCD65 /* AppDelegate.swift */; };
@@ -31,6 +32,7 @@
 		A826EAC7245A51FC28F3C903 /* Pods-Iumos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Iumos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Iumos/Pods-Iumos.debug.xcconfig"; sourceTree = "<group>"; };
 		D101C13E6FB9BE3ECF904A93 /* Pods-Iumos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Iumos.release.xcconfig"; path = "Pods/Target Support Files/Pods-Iumos/Pods-Iumos.release.xcconfig"; sourceTree = "<group>"; };
 		F93478FC203F2FD800E4B0A9 /* FrameExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameExtractor.swift; sourceTree = "<group>"; };
+		F97EE2322040A59A0090E088 /* ImageFramesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFramesViewController.swift; sourceTree = "<group>"; };
 		F9CC4590203A2AEA003CCD65 /* Iumos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Iumos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9CC45A5203A2B39003CCD65 /* Iumos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Iumos-Bridging-Header.h"; sourceTree = "<group>"; };
 		F9CC45A6203A2B3A003CCD65 /* RaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RaceViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				F9CC45B1203A2B3C003CCD65 /* NameViewController.swift */,
 				F9CC45B2203A2B3C003CCD65 /* NewExamViewController.swift */,
 				F9CC45A6203A2B3A003CCD65 /* RaceViewController.swift */,
+				F97EE2322040A59A0090E088 /* ImageFramesViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 			files = (
 				F9CC45C7203A2B3E003CCD65 /* ResultsViewController.swift in Sources */,
 				F9CC45BE203A2B3E003CCD65 /* AppDelegate.swift in Sources */,
+				F97EE2332040A59A0090E088 /* ImageFramesViewController.swift in Sources */,
 				F9CC45C6203A2B3E003CCD65 /* WelcomeViewController.swift in Sources */,
 				F9CC45C0203A2B3E003CCD65 /* HomeTableViewCell.swift in Sources */,
 				F9CC45B9203A2B3E003CCD65 /* RaceViewController.swift in Sources */,

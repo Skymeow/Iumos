@@ -14,10 +14,12 @@ protocol FrameExtractorDelegate: class {
 
 class FrameExtractor: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate {
     
+    var imgFrames = [UIImage]()
 //    set capture camera to be font
     private let position = AVCaptureDevice.Position.front
 //    set quality of the video
     private let quality = AVCaptureSession.Preset.medium
+    var queue = DispatchQueue(label: "sample buffer")
     
     private var permissionGranted = false
 //    use serial queue, so we won't block the main thread
@@ -55,6 +57,10 @@ class FrameExtractor: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate {
         }
     }
     
+    func stopSession() {
+        self.captureSession.stopRunning()
+    }
+    
     private func requestPermission() {
         
 //        since REQUESTACCESS CALL is asyncronus, we need to suspend session queue, and resume it once we get a respond from user
@@ -80,7 +86,7 @@ class FrameExtractor: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate {
         //        MARK: Output configure
         let videoOutput = AVCaptureVideoDataOutput()
 //        set video output DELEGATE to be this FrameExtrator class
-        videoOutput.setSampleBufferDelegate(self, queue: DispatchQueue(label: "sample buffer"))
+        videoOutput.setSampleBufferDelegate(self, queue: queue)
 //        add the frame we received from video
         guard captureSession.canAddOutput(videoOutput) else { return }
         captureSession.addOutput(videoOutput)
@@ -93,11 +99,13 @@ class FrameExtractor: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate {
     
 //    check if the devise is able to capture video, and the position of camera is front
     private func selectCaptureDevice() -> AVCaptureDevice? {
+//        AVCaptureDevice.devices()
         return AVCaptureDevice.devices().filter {
             ($0 as AnyObject).hasMediaType(AVMediaType.video) &&
                 ($0 as AnyObject).position == position
             }.first as? AVCaptureDevice
-}
+     
+    }
 
     // MARK: Sample buffer to UIImage conversion
     private func imageFromSampleBuffer(sampleBuffer: CMSampleBuffer) -> UIImage? {
@@ -109,13 +117,15 @@ class FrameExtractor: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate {
     
     // MARK: AVCaptureVideoDataOutputSampleBufferDelegate
 //    being called eveytime a new frame become available
-    func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputSampleBuffer sampleBuffer: CMSampleBuffer!, from connection: AVCaptureConnection!) {
+    func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
         guard let uiImage = imageFromSampleBuffer(sampleBuffer: sampleBuffer) else { return }
-// every frame processing must be done on this queue.
+        
+        // every frame processing must be done on this queue.
         DispatchQueue.main.async { [unowned self] in
-//            CALL THE PROCOTOL FUNCTION
+            //            CALL THE PROCOTOL FUNCTION
             self.delegate?.captured(image: uiImage)
         }
+        imgFrames.append(uiImage)
     }
 }
 
